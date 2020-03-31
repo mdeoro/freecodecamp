@@ -1,0 +1,27 @@
+body {
+  background: #bab2b5;
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-rows: auto auto auto;
+  grid-gap: 10px;
+  grid-template-areas:
+    ". title ."
+    ". description ."
+    ". form .";
+  }
+
+  #title {
+  grid-area: title;
+  color: #123c69;
+  justify-self: center;
+  }
+
+  #description {
+  grid-area: description;
+  text-align: justify;
+  }
+
+  #form {
+  background: #123c69;
+  grid-area: form;
+  }
