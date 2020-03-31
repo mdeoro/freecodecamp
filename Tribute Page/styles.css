@@ -1,24 +1,42 @@
-body {
+#main {
   background-color: white;
+  display: grid;
+  grid-template-columns: 1fr 6fr 1fr;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas:
+    ". header ."
+    ". image ."
+    ". content . "
+    ". footer .";
+  font-size: 18px;
 }
 
-#title {
+#header {
   color: green;
-font-family: garamond;
-}
+  font-family: garamond;
+  grid-area: header;
+  text-align: center;
+ }
 
 #img-div {
   background-color: grey;
-  width: 50%;
   padding: 10px;
-  display: flex;
-  flex-direction: column;
+  grid-area: image;
 }
 
 #image {
-  align-self: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+#img-caption {
+  text-align: justify;
 }
 
 #tribute-info {
   text-align: justify;
+  grid-area: content;
 }
