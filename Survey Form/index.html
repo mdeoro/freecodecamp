@@ -3,24 +3,33 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
   </head>
-  <body>
-    <header id="title">
-      <h1>House swap registration</h1>
-    </header>
-    <div id="description">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </div>
-    <div id="form">
-      <form class="" action="index.html" method="post">
-        <input type="text" name="" value="" id="name" placeholder="NAME">NAME
-        <input type="text" name="" value="" id="email" placeholder="EMAIL">EMAIL
-        <input type="text" name="" value="" id="number" placeholder="NUMBER">NUMBER
-        <div id="dropdown">DROPDOWN
-        </div>
-        <button type="submit" id="submit">SUBMIT BUTTON
-        </button>
-      </form>
-    </div>
+    <body>
+      <header id="header">
+        <h1 id="title">House swap registration</h1></header>
+      <p id="description">Thank you for your interest in the House Swap program! Please let us know about your plans with this program and some details about your house so we can enroll you and soon start swaping your place with other members of the network. </p>
+      <form id="survey-form" action="index.html" method="post">
+          <label id="name-label" for="name"><p>NAME</p><input type="text" id="name" placeholder="NAME" required></label>
+          <label id="email-label" for="email"><p>EMAIL</p><input type="email" id="email" placeholder="EMAIL" required></label>
+          <label id="number-label" for="number"><p>NUMBER OF NIGHTS (From 1 to 14)</p><input type="number" id="number" placeholder="NUMBER" min="1" max="14"></label>
+          <p>WHERE IS YOUR HOUSE?</p><select id="dropdown" name="city">
+       <option value="Buenos Aires">Buenos Aires</option>
+       <option value="Córdoba">Córdoba</option>
+       <option value="Mendoza">Mendoza</option>
+       <option value="Rosario">Rosario</option>
+          </select> <br>
+           <p>WOULD YOU LIKE TO HOST, TRAVEL OR BOTH?</p>         <label for="host"><input id="host" value="host" type="radio" name="host-travel">Host </label><br>
+          <label for="travel"><input id="travel" value="travel" type="radio" name="host-travel">Travel
+  </label><br>
+          <label for="host-and-travel"><input id="host-and-travel" value="host and travel" type="radio" name="host-travel">Host & Travel</label><br>
+          <p>DETAILS ABOUT YOUR PLACE</p>
+          <label for="Pet friendly"><input id="pet-friendly" value="is-pet-friendly" type="checkbox" name="house">My house is pet friendly
+  </label><br>
+        <label for="Non smoking"><input id="non-smoking" value="is-non-smoking" type="checkbox" name="house">My house is smoke free</label><br>
+          <label for="Non smoking"><input id="non-smoking" value="is-safe-for-babies" type="checkbox" name="house">My house is safe for babies</label><br>
+          <p>ADDITIONAL COMMENTS</p>
+          <textarea id="textarea"></textarea><br>
+          <button type="submit" id="submit">SUBMIT       </button>
+        </form>
   </body>
-</html>

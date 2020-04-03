@@ -1,6 +1,7 @@
 body {
-  background: #bab2b5;
+  background: #7A9D96;
   display: grid;
+  font-family: Raleway;
   grid-template-columns: 1fr 4fr 1fr;
   grid-template-rows: auto auto auto;
   grid-gap: 10px;
@@ -10,18 +11,36 @@ body {
     ". form .";
   }
 
-  #title {
+#header {
   grid-area: title;
-  color: #123c69;
   justify-self: center;
   }
+
+  #title {
+  color: #00303F;
+        }
 
   #description {
   grid-area: description;
   text-align: justify;
+  font-size: 18px;
+}
+
+  #survey-form {
+  background: #DCAE1D;
+  grid-area: form;
+  padding: 20px;
+  color: #00303F;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
   }
 
-  #form {
-  background: #123c69;
-  grid-area: form;
-  }
+#submit {
+  margin-top: 20px;
+  background: #00303F;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+}
