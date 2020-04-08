@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <container>
+    <nav id="navbar">
+      <header>CODING FOR WEB DEV</header>
+    <a href="#html5" class="nav-link">HTML5</a>
+    <a href="#css3"class="nav-link">CSS3</a>
+    <a href="#javascript"class="nav-link">JavaScript</a>
+    <a href="#jquery" class="nav-link">
+jQuery</a>
+    <a href="#react"class="nav-link">React</a>
+    <a href="#angular"class="nav-link">Angular</a>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="html5">
+        <header>HTML5</header>
+        <p>HTML5 is the latest evolution of the standard that defines HTML. The term represents two different concepts. It is a new version of the language HTML, with new elements, attributes, and behaviors, and a larger set of technologies that allows the building of more diverse and powerful Web sites and applications. This set is sometimes called HTML5 & friends and often shortened to just HTML5.</p>
+        <p>Designed to be usable by all Open Web developers, this reference page links to numerous resources about HTML5 technologies, classified into several groups based on their function.<p>
+      <ul>
+  <li>Semantics: allowing you to describe more precisely what your content is.</li>
+    <li>Connectivity: allowing you to communicate with the server in new and innovative ways.</li>
+    <li>Offline and storage: allowing webpages to store data on the client-side locally and operate offline more efficiently.</li>
+    <li>Multimedia: making video and audio first-class citizens in the Open Web.</li>
+    <li>2D/3D graphics and effects: allowing a much more diverse range of presentation options.</li>
+    <li>Performance and integration: providing greater speed optimization and better usage of computer hardware.
+    <li>Device access: allowing for the usage of various input and output devices.</li>
+    <li>Styling: letting authors write more sophisticated themes.</li>
+</ul>
+      </section>
+      <section class="main-section" id="css3">
+        <header>CSS3</header>
+        <p>CSS3 is the latest evolution of the Cascading Style Sheets language and aims at extending CSS2.1. It brings a lot of long-awaited novelties, like rounded corners, shadows, gradients, transitions or animations, as well as new layouts like multi-columns, flexible box or grid layouts. Experimental parts are vendor-prefixed and should either be avoided in production environments, or used with extreme caution as both their syntax and semantics can change in the future.</p>
+      </section>
+      <section class="main-section" id="javascript">
+        <header>JavaScript</header>
+        <p>JavaScript (or "JS") is a programming language used most often for dynamic client-side scripts on webpages, but it is also often used on the server-side, using packages such as Node.js.</p>
+        <p>JavaScript should not be confused with the Java programming language. Although "Java" and "JavaScript" are trademarks (or registered trademarks) of Oracle in the U.S. and other countries, the two programming languages are significantly different in their syntax, semantics, and uses.</p>
+        <p>JavaScript is mostly used in the browser, enabling developers to manipulate webpage content through the DOM, manipulate data with AJAX and IndexedDB, draw graphics with canvas, interact with the device running the browser through various APIs, and more. JavaScript is one of the world's most commonly-used languages, owing to the recent growth and performance improvement of APIs available in browsers.</p>
+      </section>
+      <section class="main-section" id="jquery">
+        <header>jQuery</header>
+        <p>jQuery is a JavaScript Library that focuses on simplifying DOM manipulation, AJAX calls, and Event handling. It is used by JavaScript developers frequently.
+
+jQuery uses a format, $(selector).action() to assign an element(s) to an event. To explain it in detail, $(selector) will call jQuery to select selector element(s), and assign it to an event API called .action().<br>
+
+<div class="code-box"><code>
+$(document).ready(function(){
+  alert("Hello World!");
+  $("#blackBox").hide();
+});
+</code></div>
+
+The above code carries out the same function as the following code:
+<div class="code-box"><code>
+window.onload = function() {
+  alert( "Hello World!" );
+  document.getElementById("blackBox").style.display = "none";
+  };</code></div>
+
+      </p>
+      </section>
+      <section class="main-section" id="react">
+        <header>React</header>
+        <p>React is a declarative, efficient, and flexible JavaScript library for building user interfaces. It lets you compose complex UIs from small and isolated pieces of code called “components”.
+
+React has a few different kinds of components, but we’ll start with React.Component subclasses:</p>
+        <div class="code-box"><code>class ShoppingList extends React.Component {
+  render() {
+    return (
+      <div className="shopping-list">
+        <h3>Shopping List for {this.props.name}</h3>
+        <ul>
+          <li>Instagram</li>
+          <li>WhatsApp</li>
+          <li>Oculus</li>
+        </ul>
+      </div>
+    );
+  }
+          }</code></div>
+      </section>
+      <section class="main-section" id="angular">
+        <header>Angular</header>
+        <p>AngularJS fits the definition of a framework the best, even though it's much more lightweight than a typical framework and that's why many confuse it with a library.
+
+AngularJS is 100% JavaScript, 100% client-side and compatible with both desktop and mobile browsers. So it's definitely not a plugin or some other native browser extension.</p>
+        <p>What is the version compatibility between AngularJS main and optional modules?
+
+AngularJS code is separated into a main module ("angular"), and a few different optional modules ("angular-animate", "angular-route" etc) that are dependant on the main module. When a new AngularJS version is released, all modules are updated to the new version. This means that the main module and the optional modules must always have the exact same version, down to the patch number, otherwise your application might break.
+
+Therefore you must always explicitly lock down your dependencies, for example in the package.json, the following means that "angular" and "angular-animate" are always updated to the same version:
+          <div class="code-box"><code>
+            {
+  "angular": "~1.6.0",
+  "angular-animate": "~1.6.0"
+}
+          </code></div>
+            If you define exact versions, make sure core and optional modules are the same:  <div class="code-box"><code>
+            {
+  "angular": "1.6.3",
+  "angular-animate": "1.6.3"
+}
+          </code><div>
+                             </p>
+      </section>
+    </main>
+  </container>
+  </body>
