@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Muli, sans-serif;
+}
+
+nav {
+  background: #1B325F;
+  position: fixed;
+  display: flex;
+  justify-content: flex-end;
+  top: 0;
+  left: 0;
+  height: 30px;
+  width: 100%;
+  z-index: 10;
+  }
+
+a{
+  text-decoration: none;
+  color: white;
+  }
+
+.nav-link {
+padding-right: 10px;
+padding-top: 5px;
+}
+
+#welcome-section {
+  display: flex;
+  background: #1B325F;
+  color: white;
+  height: 100vh;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  }
+
+#projects {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 5% 1fr 5%;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-row-gap: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+h3 {
+  background: #3A89C9;
+  text-align: center;
+}
+
+#tribute-page {
+  grid-row: 1 / 2;
+  grid-column: 2 / -2;
+  }
+
+#survey-form {
+  grid-row: 2 / 3;
+  grid-column: 2 / -2;
+  }
+
+#landing-page {
+    grid-row: 3 / 4;
+    grid-column: 2 / -2;
+    }
+
+ #technical-documentation {
+    grid-row: 4 / 5;
+    grid-column: 2 / -2;
+    }
+
+.project-tile {
+ *background:#3A89C9;
+  background: grey;
+}
+
+.project-img {
+  max-width: 360px;
+  height: auto;
+  display: flex;
+  margin: auto auto 10px auto;
+
+}
+
+@media screen and (max-width: 600px) {
+
+  .project-img {width: 50%;
+    }
+}
+
+footer {
+  background: #1B325F;
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  width: 100%;
+  left: 0px;
+  bottom: 0px;
+  }
+
+footer > p {
+  padding-right: 10px;
+}
